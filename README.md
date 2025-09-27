@@ -1,6 +1,7 @@
 # OpenFoodFacts ETL
 
 Extract raw OpenFoodFacts data to S3, transform it with DuckDB into curated Parquet on S3, and optionally load into Postgres.
+## OpenFoodFacts → Extract → S3 (raw) → Transform with DuckDB → S3 (curated Parquet) → Load to Postgres
 
 ## Prerequisites
 - Python 3.10+
