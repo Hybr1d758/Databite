@@ -1,6 +1,7 @@
 # OpenFoodFacts ETL
 
 Extract raw OpenFoodFacts data to S3, transform it with DuckDB into curated Parquet on S3, and optionally load into Postgres.
+<img width="1024" height="1536" alt="Databite ETL Pipeline Flowchart" src="https://github.com/user-attachments/assets/2117271e-9daf-4485-8ad4-44a32f647210" />
 ## OpenFoodFacts → Extract → S3 (raw) → Transform with DuckDB → S3 (curated Parquet) → Load to Postgres
 
 ## Prerequisites
