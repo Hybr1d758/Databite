@@ -1,6 +1,8 @@
 # OpenFoodFacts ETL
 
 Extract raw OpenFoodFacts data to S3, transform it with DuckDB into curated Parquet on S3, and optionally load into Postgres.
+<img width="1024" height="1536" alt="Databite ETL Pipeline Flowchart" src="https://github.com/user-attachments/assets/2117271e-9daf-4485-8ad4-44a32f647210" />
+## OpenFoodFacts → Extract → S3 (raw) → Transform with DuckDB → S3 (curated Parquet) → Load to Postgres
 
 ## Prerequisites
 - Python 3.10+
@@ -142,4 +144,27 @@ Creates/updates table `openfoodfacts_products` by default.
   - Avoids loading multi-GB files in memory; uses multipart uploads for resilience.
 - `.env` and config via env:
   - Keeps secrets out of source; easy to change environments.
-
+```text
+Databite/
+├── etl/
+│ ├── init.py
+│ ├── extract.py # Extract raw JSONL → S3
+│ ├── transform.py # Transform JSONL → Parquet on S3
+│ ├── load.py # Load Parquet → Postgres
+│ └── utils.py # Config, logging, helpers
+│
+├── tests/
+│ ├── init.py
+│ ├── test_extract.py
+│ ├── test_transform.py
+│ └── test_load.py
+│
+├── .github/
+│ └── workflows/
+│ └── ci.yml # GitHub Actions workflow
+│
+├── requirements.txt
+├── Dockerfile
+├── .env.example # Example environment file
+└── README.md
+```

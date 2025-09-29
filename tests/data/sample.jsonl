@@ -1,0 +1,3 @@
+{"code":"0001","product_name":"Apple Juice","brands":"BrandA","categories":"Beverages","countries":"United States","nutriments":{"energy-kcal_100g":"46","sugars_100g":"10.1","fat_100g":"0","proteins_100g":"0.1"}}
+{"code":"0002","product_name":"Orange Juice","brands":"BrandB","categories":"Beverages","countries":"United Kingdom","nutriments":{"energy-kcal_100g":"45","sugars_100g":"8.6","fat_100g":"0","proteins_100g":"0.7"}}
+{"code":"0003","product_name":"Yogurt","brands":"BrandC","categories":"Dairy","countries":"France","nutriments":{"energy-kcal_100g":"65","sugars_100g":"5.0","fat_100g":"3.5","proteins_100g":"3.8"}}
